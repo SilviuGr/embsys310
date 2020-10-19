@@ -1,0 +1,1 @@
+An electric coffee pot with a sensor that controls temperature is an embedded system.

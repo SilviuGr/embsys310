@@ -1,0 +1,2 @@
+2's compliment is useful becuase you only need one operation "+" in order to subtract (add negatives basically).
+Thus not requiring a different operator to be developed.

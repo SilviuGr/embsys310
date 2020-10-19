@@ -1,0 +1,2 @@
+![Output](C:\Users\Silviu\Pictures\hw1picoutput.png)
+Format: ![Alt Text](url)
