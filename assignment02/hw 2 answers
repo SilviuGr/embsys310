@@ -1,0 +1,51 @@
+1. 
+
+a) Value of the counter in locals window is -2147483648
+b) Value of the counter in the Registers is 0x80000000
+c)both N and V flags are set in the APSR N is for negative V is for overflow 
+because the value 0x7FFFFFFF is the largest positive 2's compliment value
+when 1 gets added Ox80000000 becomes smallest possible negative number for that resolution (number of bytes)
+so it overflowed and became negative
+
+2.
+
+a) value switched from -1 to 0 
+b) the zero and carry flags were 1
+
+because the number FFFFFFFF (maxed out ones in binary) incremented by 1 becomes all zeros with 1 
+carried over. It's not an overflow because 0 is within the range of this 2's compliment value
+with the associated number of bytes. So the value was zero and there was a carry.
+
+3.
+
+a)The value is 2147483648
+b) Both N and V flags are set in the APSR N is for negative V is for overflow. 
+The register expects it to be in 2's compliment doesn't see it as unsigned.
+
+4.
+
+a) value is zero (makes sense b/c it's no longer at max value has to circle over)
+b) Zero and Carry bits are set because it was at zero and the previous step carried a value over
+
+5. 
+
+Move the “counter’ variable outside of main (at the top of the file):
+a) The scope of the variable is Gloabal.
+b) Counter not viewable in local anymore.
+c) Counter can be tracked in "watch" now.
+d) Counter address is 0x20000000
+
+6.
+
+a) Value of counter is 4.
+b) Program increases the value of the variable at the *p_inint location.
+
+7.
+
+a) 0x20000000 is the location of the variable
+b) RAM random access memory
+c) Value is 4
+
+
+
+
