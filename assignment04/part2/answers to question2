@@ -1,1 +1,19 @@
+ a. How does the calling function “func2” pass the values to the called function “func1”?
+ 
+ It loads the first value into R0 then it loads R0 into the SP then it loads the following 4 values into R3 through R1.
+ Then inside of func1 it loads the SP into R4 and passes the values using R4 and the rest of the registers.
+ 
+b. What extra code did the compiler generate before calling the function “func1” with the
+multiple arguments?
 
+All I saw was it loading the registers and sending one of the values to the SP before BL to func1
+
+c. What extra code did the compiler generate inside the called function “funct1” with the
+multiple list of arguments?
+
+for some reason it pushes PUSH {R4, R5} to the stack
+then it loads the previously pushed value back to R4 to be used in the program.
+
+d. Any other observations?
+
+I'm not sure why it pushed {R4, R5} to the stack before bringing the value back.
